@@ -1,5 +1,14 @@
-import { useEffect, useRef, useState } from 'react';
-import Crossword from '@jaredreisinger/react-crossword';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import Crossword, {
+    CrosswordImperative,
+    CrosswordGrid,
+    CrosswordProps,
+    CrosswordProvider,
+    CrosswordProviderImperative,
+    CrosswordProviderProps,
+    DirectionClues,
+    useIpuz,
+  } from '@jaredreisinger/react-crossword';
 import './crosswordPage.css';
 
 export default function CrosswordPage () {
@@ -43,8 +52,6 @@ export default function CrosswordPage () {
             down: outputDataDown
         })  
 
-        console.log(outputData);
-        console.log('sa', rawData);
     }
 
       function fetchRawData () {
@@ -60,10 +67,11 @@ export default function CrosswordPage () {
 
       }
 
-    const onCorrect = (...values) => {
+    const onCorrect = useCallback((...values) => {
             console.log("fdsd");
-    }
-
+    },
+    []
+    );
     useEffect(() => {
         fetchRawData();
         crosswordGridRef.current.highlightBackground = 'rgb(0,255,0)'

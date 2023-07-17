@@ -143,7 +143,7 @@ export default function EditCrossword () {
         <>
             <div className="edit-page-container">
                 <h1 className="edit-page-title">Biotechnology Crossword</h1>
-                <p className="edit-page-description"><b>How to:</b> In the input fields below, enter the words and their corresponding hints. After completion, hit submit to generate the crossword. You may add upto 12 words.</p>
+                <p className="edit-page-description"><b>How to:</b> In the input fields below, enter the words and their corresponding hints. After completion, hit submit to generate the crossword. You may add upto 12 words. Takes a while to submit after you hit submit. DO NOT hit it multiple times.</p>
                 <div className="crossword-clue-card">
                     <form onSubmit={handleSubmit} className="crossword-clue-form">
                         <div className="word-hint-pair">
