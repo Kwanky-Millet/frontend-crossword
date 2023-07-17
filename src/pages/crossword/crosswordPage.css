@@ -1,0 +1,14 @@
+.crossword-page-container {
+    position: absolute;
+    width: 100vw;
+    height: 200vh;
+    background-color: white;
+    display: flex;
+}
+
+.crossword-container {
+    height: 60%;
+    width: 20%;
+    padding-left: 5%;
+    padding-top: 5%;
+}
