@@ -121,7 +121,7 @@ export default function EditCrossword () {
         if (inputValid) {
             let layout = clg.generateLayout(layoutInput);
 
-            const request = fetch("http://localhost:8000/api/crossword/",
+            const request = fetch("https://backend-crossword.vercel.app/api/crossword/",
             {
                 method: "DELETE"
             }).then(res => {
