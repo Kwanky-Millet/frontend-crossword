@@ -14,7 +14,7 @@ export default function Login () {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        if (username === "sjubiotech    " && passwd === "4bd50ea055cdaac246b0db90d2b7e1a8") {
+        if (username === "sjubiotech" && passwd === "21232f297a57a5a743894a0e4a801fc3") {
             setErrorMsg("");
             navigate('/editCrossword', { state: { status: 1 }})
         } else {
